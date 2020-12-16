@@ -5,7 +5,7 @@
 	"main": "types.ts",
 	"files": [
 		"sign",
-		"types.ts",
+		"types.d.ts",
 		"!**/*.test.*"
 	],
 	"scripts": {
@@ -13,10 +13,11 @@
 		"build": "tsc",
 		"watch": "tsc -w",
 		"pretest": "yarn build",
-		"prebuild": "rimraf dist",
+		"prebuild": "rimraf sign",
 		"lint": "yarn lint:eslint && yarn lint:format",
 		"lint:eslint": "eslint . --ext .ts,.js --fix",
-		"lint:format": "prettier --write '**/*.{ts,js,json,md,yml}'"
+		"lint:format": "prettier --write '**/*.{ts,js,json,md,yml}'",
+		"prepack": "yarn test"
 	},
 	"author": "aggre",
 	"license": "MPL-2.0",
