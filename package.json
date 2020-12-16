@@ -2,7 +2,12 @@
 	"name": "template-repos-ts",
 	"version": "1.0.0",
 	"description": "Template repository for using TypeScript",
-	"main": "index.js",
+	"main": "types.ts",
+	"files": [
+		"sign",
+		"types.ts",
+		"!**/*.test.*"
+	],
 	"scripts": {
 		"test": "ava",
 		"build": "tsc",
@@ -16,12 +21,15 @@
 	"author": "",
 	"license": "MPL-2.0",
 	"dependencies": {
+		"@azure/functions": "^1.2.2",
 		"ethereum-waffle": "3.2.1",
+		"jsonwebtoken": "^8.5.1",
 		"ramda": "^0.27.1"
 	},
 	"devDependencies": {
 		"@ava/typescript": "1.1.1",
 		"@types/dotenv": "8.2.0",
+		"@types/jsonwebtoken": "^8.5.0",
 		"@types/node": "14.14.14",
 		"@types/ramda": "0.27.33",
 		"@typescript-eslint/eslint-plugin": "4.10.0",
@@ -42,7 +50,7 @@
 		],
 		"typescript": {
 			"rewritePaths": {
-				"/": "dist/"
+				"src/": "/"
 			}
 		}
 	},
