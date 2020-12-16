@@ -1,7 +1,7 @@
 {
-	"name": "template-repos-ts",
-	"version": "1.0.0",
-	"description": "Template repository for using TypeScript",
+	"name": "@devprotocol/khaos-core",
+	"version": "0.0.1",
+	"description": "Core library for Khaos",
 	"main": "types.ts",
 	"files": [
 		"sign",
@@ -18,7 +18,7 @@
 		"lint:eslint": "eslint . --ext .ts,.js --fix",
 		"lint:format": "prettier --write '**/*.{ts,js,json,md,yml}'"
 	},
-	"author": "",
+	"author": "aggre",
 	"license": "MPL-2.0",
 	"dependencies": {
 		"@azure/functions": "^1.2.2",
