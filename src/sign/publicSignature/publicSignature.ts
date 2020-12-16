@@ -1,10 +1,5 @@
 import { sign } from 'jsonwebtoken'
-
-export type PublicSignatureOptions = {
-	readonly message: string
-	readonly id: string
-	readonly address: string
-}
+import { PublicSignatureOptions } from '../../types'
 
 export const publicSignature = ({
 	id: i,

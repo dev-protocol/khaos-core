@@ -4,7 +4,6 @@ import { Secret, verify, VerifyOptions } from 'jsonwebtoken'
 import { Result } from '@ethersproject/abi'
 import { ContractInterface } from 'ethers'
 import { HttpRequest } from '@azure/functions'
-import { PublicSignatureOptions } from './src/sign/publicSignature/publicSignature'
 
 const _verify = (
 	token: string,
@@ -23,6 +22,12 @@ export type QueryData = {
 }
 
 export type Abi = ContractInterface
+
+export type PublicSignatureOptions = {
+	readonly message: string
+	readonly id: string
+	readonly address: string
+}
 
 export type FunctionAddresses = (net: NetworkName) => Promise<string>
 

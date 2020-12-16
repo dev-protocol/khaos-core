@@ -1,6 +1,6 @@
 import { verify } from 'jsonwebtoken'
 import { tryCatch, always } from 'ramda'
-import { PublicSignatureOptions } from '../publicSignature/publicSignature'
+import { PublicSignatureOptions } from '../../types'
 
 export const recoverPublicSignature = (
 	publicSignature: string,
