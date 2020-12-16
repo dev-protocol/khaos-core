@@ -48,3 +48,10 @@ export type FunctionOraclize = (
 	queryData: QueryData,
 	net: NetworkName
 ) => Promise<FunctionOraclizeResults>
+
+export type Functions = {
+	abi: Abi
+	addresses: FunctionAddresses
+	authorizer: FunctionAuthorizer
+	oraclize: FunctionOraclize
+}
