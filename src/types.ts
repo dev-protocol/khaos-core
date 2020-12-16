@@ -50,8 +50,8 @@ export type FunctionOraclize = (
 ) => Promise<FunctionOraclizeResults>
 
 export type Functions = {
-	abi: Abi
-	addresses: FunctionAddresses
-	authorizer: FunctionAuthorizer
-	oraclize: FunctionOraclize
+	readonly abi: Abi
+	readonly addresses: FunctionAddresses
+	readonly authorizer: FunctionAuthorizer
+	readonly oraclize: FunctionOraclize
 }
