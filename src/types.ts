@@ -43,7 +43,7 @@ export type FunctionOraclizeResults = {
 	readonly statusMessage: string
 }
 
-export type FunctionOraclize = (
+export type FunctionOraclizer = (
 	signedOptions: PublicSignatureOptions,
 	queryData: QueryData,
 	net: NetworkName
@@ -52,6 +52,6 @@ export type FunctionOraclize = (
 export type Functions = {
 	readonly abi: Abi
 	readonly addresses: FunctionAddresses
-	readonly authorizer: FunctionAuthorizer
-	readonly oraclize: FunctionOraclize
+	readonly authorize: FunctionAuthorizer
+	readonly oraclize: FunctionOraclizer
 }
