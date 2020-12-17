@@ -23,7 +23,8 @@
 	"license": "MPL-2.0",
 	"dependencies": {
 		"@azure/functions": "^1.2.2",
-		"ethereum-waffle": "3.2.1",
+		"@ethersproject/abi": "^5.0.9",
+		"@ethersproject/contracts": "^5.0.8",
 		"jsonwebtoken": "^8.5.1",
 		"ramda": "^0.27.1"
 	},

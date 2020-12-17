@@ -2,7 +2,7 @@
 
 import { Secret, verify, VerifyOptions } from 'jsonwebtoken'
 import { Result } from '@ethersproject/abi'
-import { ContractInterface } from 'ethers'
+import { ContractInterface } from '@ethersproject/contracts'
 import { HttpRequest } from '@azure/functions'
 
 const _verify = (
