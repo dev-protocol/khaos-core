@@ -1,6 +1,6 @@
 {
 	"name": "@devprotocol/khaos-core",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Core library for Khaos",
 	"main": "types.ts",
 	"files": [
