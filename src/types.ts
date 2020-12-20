@@ -29,13 +29,25 @@ export type PublicSignatureOptions = {
 	readonly address: string
 }
 
-export type FunctionAddresses = (net: NetworkName) => Promise<string>
+export type FunctionAddressesOptions = {
+	readonly network: NetworkName
+}
 
-export type FunctionAuthorizer = (props: {
+export type FunctionAuthorizerOptions = {
 	readonly message: string
 	readonly secret: string
-	readonly req: HttpRequest
-}) => Promise<boolean>
+	readonly request: HttpRequest
+}
+
+export type FunctionOraclizerOptions = {
+	readonly signatureOptions: PublicSignatureOptions,
+	readonly query: QueryData,
+	readonly network: NetworkName
+}
+
+export type FunctionAddresses = (options: FunctionAddressesOptions) => Promise<string>
+
+export type FunctionAuthorizer = (options: FunctionAuthorizerOptions) => Promise<boolean>
 
 export type FunctionOraclizeResults = {
 	readonly message: string
@@ -43,11 +55,7 @@ export type FunctionOraclizeResults = {
 	readonly statusMessage: string
 }
 
-export type FunctionOraclizer = (
-	signedOptions: PublicSignatureOptions,
-	queryData: QueryData,
-	net: NetworkName
-) => Promise<FunctionOraclizeResults>
+export type FunctionOraclizer = (options: FunctionOraclizerOptions) => Promise<FunctionOraclizeResults>
 
 export type Functions = {
 	readonly abi: Abi
