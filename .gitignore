@@ -85,8 +85,7 @@ typings/
 
 # TypeScript output
 *.d.ts
-*.js.map
-*.js
+dist
 
 # Azure Functions artifacts
 bin
