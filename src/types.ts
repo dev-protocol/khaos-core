@@ -45,6 +45,14 @@ export type FunctionOraclizerOptions = {
 	readonly network: NetworkName
 }
 
+export type FunctionEventOptions = {
+	readonly network: NetworkName
+}
+
+export type FunctionPackOptions = {
+	readonly results: FunctionOraclizeResults
+}
+
 export type FunctionAddresses = (
 	options: FunctionAddressesOptions
 ) => Promise<string>
@@ -63,9 +71,22 @@ export type FunctionOraclizer = (
 	options: FunctionOraclizerOptions
 ) => Promise<FunctionOraclizeResults>
 
+export type FunctionEvent = (options: FunctionEventOptions) => Promise<string>
+
+export type FunctionPackResults = {
+	readonly name: string
+	readonly args: readonly (string | number)[]
+}
+
+export type FunctionPack = (
+	options: FunctionPackOptions
+) => Promise<FunctionPackResults>
+
 export type Functions = {
 	readonly abi: Abi
 	readonly addresses: FunctionAddresses
 	readonly authorize: FunctionAuthorizer
 	readonly oraclize: FunctionOraclizer
+	readonly event: FunctionEvent
+	readonly pack: FunctionPack
 }
