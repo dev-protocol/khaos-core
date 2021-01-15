@@ -21,7 +21,7 @@
 		"build:rollup": "rollup -c",
 		"watch": "tsc -w",
 		"pretest": "yarn build:ts",
-		"prebuild": "rimraf sign",
+		"prebuild": "rimraf dist",
 		"lint": "yarn lint:eslint && yarn lint:format",
 		"lint:eslint": "eslint . --ext .ts,.js --fix",
 		"lint:format": "prettier --write '**/*.{ts,js,json,md,yml}'",
