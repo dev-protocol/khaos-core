@@ -76,10 +76,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/dev-protocol/template-repos-ts.git"
+		"url": "git+https://github.com/dev-protocol/khaos-core.git"
 	},
+	"keywords": [],
 	"bugs": {
-		"url": "https://github.com/dev-protocol/template-repos-ts/issues"
+		"url": "https://github.com/dev-protocol/khaos-core/issues"
 	},
-	"homepage": "https://github.com/dev-protocol/template-repos-ts#readme"
+	"homepage": "https://github.com/dev-protocol/khaos-core#readme"
 }
