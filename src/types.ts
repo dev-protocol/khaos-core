@@ -4,6 +4,7 @@ import { Secret, verify, VerifyOptions } from 'jsonwebtoken'
 import { Result } from '@ethersproject/abi'
 import { ContractInterface } from '@ethersproject/contracts'
 import { HttpRequest } from '@azure/functions'
+import { UndefinedOr } from '@devprotocol/util-ts'
 
 const _verify = (
 	token: string,
@@ -55,11 +56,11 @@ export type FunctionPackOptions = {
 
 export type FunctionAddresses = (
 	options: FunctionAddressesOptions
-) => Promise<string>
+) => Promise<UndefinedOr<string>>
 
 export type FunctionAuthorizer = (
 	options: FunctionAuthorizerOptions
-) => Promise<boolean>
+) => Promise<UndefinedOr<boolean>>
 
 export type FunctionOraclizeResults = {
 	readonly message: string
@@ -69,9 +70,11 @@ export type FunctionOraclizeResults = {
 
 export type FunctionOraclizer = (
 	options: FunctionOraclizerOptions
-) => Promise<FunctionOraclizeResults>
+) => Promise<UndefinedOr<FunctionOraclizeResults>>
 
-export type FunctionEvent = (options: FunctionEventOptions) => Promise<string>
+export type FunctionEvent = (
+	options: FunctionEventOptions
+) => Promise<UndefinedOr<string>>
 
 export type FunctionPackResults = {
 	readonly name: string
@@ -80,7 +83,7 @@ export type FunctionPackResults = {
 
 export type FunctionPack = (
 	options: FunctionPackOptions
-) => Promise<FunctionPackResults>
+) => Promise<UndefinedOr<FunctionPackResults>>
 
 export type Functions = {
 	readonly abi: Abi
