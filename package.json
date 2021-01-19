@@ -1,6 +1,6 @@
 {
 	"name": "@devprotocol/khaos-core",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"description": "Core library for Khaos",
 	"main": "dist/index.js",
 	"exports": {
