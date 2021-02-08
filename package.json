@@ -30,10 +30,10 @@
 	"author": "aggre",
 	"license": "MPL-2.0",
 	"dependencies": {
-		"@azure/functions": "^1.2.2",
+		"@azure/functions": "^1.2.3",
 		"@devprotocol/util-ts": "2.1.0",
-		"@ethersproject/abi": "^5.0.9",
-		"@ethersproject/contracts": "^5.0.8",
+		"@ethersproject/abi": "^5.0.12",
+		"@ethersproject/contracts": "^5.0.10",
 		"jsonwebtoken": "^8.5.1",
 		"ramda": "^0.27.1"
 	},
@@ -50,7 +50,7 @@
 		"ava": "3.15.0",
 		"dotenv": "8.2.0",
 		"eslint": "7.19.0",
-		"eslint-config-prettier": "6.15.0",
+		"eslint-config-prettier": "7.2.0",
 		"eslint-plugin-functional": "3.1.0",
 		"husky": "4.3.8",
 		"prettier": "2.2.1",
