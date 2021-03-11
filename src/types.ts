@@ -41,7 +41,7 @@ export type FunctionAuthorizerOptions = {
 }
 
 export type FunctionOraclizerOptions = {
-	readonly signatureOptions: PublicSignatureOptions
+	readonly signatureOptions?: PublicSignatureOptions
 	readonly query: QueryData
 	readonly network: NetworkName
 }
