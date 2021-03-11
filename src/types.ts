@@ -17,7 +17,7 @@ export type JWTVerifyWithoutCallback = typeof _verify
 export type NetworkName = 'mainnet' | 'ropsten'
 
 export type QueryData = {
-	readonly publicSignature: string
+	readonly publicSignature?: string
 	readonly allData: Result
 	readonly transactionhash: string
 }

@@ -25,7 +25,8 @@
 		"lint": "yarn lint:eslint && yarn lint:format",
 		"lint:eslint": "eslint . --ext .ts,.js --fix",
 		"lint:format": "prettier --write '**/*.{ts,js,json,md,yml}'",
-		"prepack": "yarn test && yarn build"
+		"prepack": "yarn test && yarn build",
+		"prepare": "husky install"
 	},
 	"author": "aggre",
 	"license": "MPL-2.0",
@@ -67,11 +68,6 @@
 			"rewritePaths": {
 				"/": "dist/"
 			}
-		}
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "yarn lint"
 		}
 	},
 	"repository": {
