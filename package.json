@@ -34,7 +34,7 @@
 		"@azure/functions": "^1.2.3",
 		"@devprotocol/util-ts": "2.2.1",
 		"@ethersproject/abi": "^5.1.0",
-		"@ethersproject/contracts": "^5.0.10",
+		"@ethersproject/contracts": "^5.1.1",
 		"jsonwebtoken": "^8.5.1",
 		"ramda": "^0.27.1"
 	},
