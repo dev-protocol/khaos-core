@@ -2,7 +2,6 @@
 
 import { Secret, verify, VerifyOptions } from 'jsonwebtoken'
 import { Result } from '@ethersproject/abi'
-import { ContractInterface } from '@ethersproject/contracts'
 import { HttpRequest } from '@azure/functions'
 import { UndefinedOr } from '@devprotocol/util-ts'
 
@@ -22,7 +21,7 @@ export type QueryData = {
 	readonly transactionhash: string
 }
 
-export type Abi = ContractInterface
+export type Abi = readonly string[]
 
 export type PublicSignatureOptions = {
 	readonly message: string
