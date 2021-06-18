@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
-
+import { Context } from '@azure/functions'
 import { Secret, verify, VerifyOptions } from 'jsonwebtoken'
 import { Result } from '@ethersproject/abi'
 import { HttpRequest } from '@azure/functions'
@@ -31,6 +31,7 @@ export type PublicSignatureOptions = {
 
 export type FunctionAddressesOptions = {
 	readonly network: NetworkName
+	readonly context: Context
 }
 
 export type FunctionAuthorizerOptions = {
