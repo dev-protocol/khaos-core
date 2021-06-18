@@ -31,7 +31,7 @@ export type PublicSignatureOptions = {
 
 export type FunctionAddressesOptions = {
 	readonly network: NetworkName
-	readonly context: Context
+	readonly context?: Context
 }
 
 export type FunctionAuthorizerOptions = {
