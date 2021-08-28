@@ -38,7 +38,7 @@
 		"ramda": "^0.27.1"
 	},
 	"devDependencies": {
-		"@ava/typescript": "1.1.1",
+		"@ava/typescript": "2.0.0",
 		"@rollup/plugin-multi-entry": "4.1.0",
 		"@rollup/plugin-typescript": "8.2.5",
 		"@types/dotenv": "8.2.0",
