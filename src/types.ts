@@ -5,11 +5,7 @@ import { Result } from '@ethersproject/abi'
 import { HttpRequest } from '@azure/functions'
 import { UndefinedOr } from '@devprotocol/util-ts'
 
-const _verify = (
-	token: string,
-	secretOrPublicKey: Secret,
-	options?: VerifyOptions
-) => verify(token, secretOrPublicKey, options)
+const _verify = verify
 
 export type JWTVerifyWithoutCallback = typeof _verify
 
