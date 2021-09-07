@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { Context } from '@azure/functions'
-import { Secret, verify, VerifyOptions } from 'jsonwebtoken'
+import { verify } from 'jsonwebtoken'
 import { Result } from '@ethersproject/abi'
 import { HttpRequest } from '@azure/functions'
 import { UndefinedOr } from '@devprotocol/util-ts'
