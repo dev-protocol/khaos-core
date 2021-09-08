@@ -1,15 +1,11 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { Context } from '@azure/functions'
-import { Secret, verify, VerifyOptions } from 'jsonwebtoken'
+import { verify } from 'jsonwebtoken'
 import { Result } from '@ethersproject/abi'
 import { HttpRequest } from '@azure/functions'
 import { UndefinedOr } from '@devprotocol/util-ts'
 
-const _verify = (
-	token: string,
-	secretOrPublicKey: Secret,
-	options?: VerifyOptions
-) => verify(token, secretOrPublicKey, options)
+const _verify = verify
 
 export type JWTVerifyWithoutCallback = typeof _verify
 
