@@ -9,7 +9,11 @@ const _verify = verify
 
 export type JWTVerifyWithoutCallback = typeof _verify
 
-export type NetworkName = 'mainnet' | 'ropsten'
+export type NetworkName =
+	| 'mainnet'
+	| 'ropsten'
+	| 'arbitrum-one-mainnet'
+	| 'arbitrum-one-rinkeby'
 
 export type QueryData = {
 	readonly publicSignature?: string
