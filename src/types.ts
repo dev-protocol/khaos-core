@@ -12,8 +12,8 @@ export type JWTVerifyWithoutCallback = typeof _verify
 export type NetworkName =
 	| 'mainnet'
 	| 'ropsten'
-	| 'arbitrum-one-mainnet'
-	| 'arbitrum-one-rinkeby'
+	| 'arbitrum-one'
+	| 'arbitrum-rinkeby'
 
 export type QueryData = {
 	readonly publicSignature?: string
