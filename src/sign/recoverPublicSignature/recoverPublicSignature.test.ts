@@ -1,3 +1,4 @@
+/* eslint-disable functional/no-return-void */
 import test from 'ava'
 import { sign } from 'jsonwebtoken'
 import { publicSignature as pubSig } from '../publicSignature/publicSignature'
