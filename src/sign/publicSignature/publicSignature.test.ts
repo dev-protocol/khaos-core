@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable functional/no-return-void */
 import test from 'ava'
 import { sign, verify } from 'jsonwebtoken'
 import { publicSignature } from './publicSignature'
