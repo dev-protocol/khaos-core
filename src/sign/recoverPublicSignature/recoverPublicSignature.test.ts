@@ -1,4 +1,5 @@
 /* eslint-disable functional/no-return-void */
+/* eslint-disable @typescript-eslint/prefer-readonly-parameter-types */
 import test from 'ava'
 import { sign } from 'jsonwebtoken'
 import { publicSignature as pubSig } from '../publicSignature/publicSignature'
