@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/prefer-readonly-parameter-types */
 import { Context } from '@azure/functions'
 import { verify } from 'jsonwebtoken'
 import { Result } from '@ethersproject/abi'
@@ -14,6 +15,8 @@ export type NetworkName =
 	| 'ropsten'
 	| 'arbitrum-one'
 	| 'arbitrum-rinkeby'
+	| 'polygon-mainnet'
+	| 'polygon-mumbai'
 
 export type QueryData = {
 	readonly publicSignature?: string
