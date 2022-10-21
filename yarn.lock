@@ -564,12 +564,12 @@
     path-browserify "^1.0.0"
     url "^0.11.0"
 
-"@rollup/plugin-multi-entry@5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-multi-entry/-/plugin-multi-entry-5.0.0.tgz#7c7f02806a90db2efd83241c7e8221929e434cd8"
-  integrity sha512-87E2ceF5iVsROeq/RS2dnhJXX+O9MPfdUwxaFG6M9hHzeUvZyXqyBZZXX/w6L73SHmYhcjD8kriZ95X+1AhIVQ==
+"@rollup/plugin-multi-entry@5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-multi-entry/-/plugin-multi-entry-5.0.1.tgz#84d9f9124470386f0a9b77243776978f278611e7"
+  integrity sha512-bNvaoFkRDQvtoAJYvgiUTfFVA4OaQu3QH1IJahEOnnHR3lI41eLDfwXjAYxbuxi7pZF8U41OkLxhvnVdBT+Ytg==
   dependencies:
-    "@rollup/plugin-virtual" "^2.0.3"
+    "@rollup/plugin-virtual" "^3.0.0"
     matched "^5.0.1"
 
 "@rollup/plugin-typescript@9.0.1":
@@ -580,10 +580,10 @@
     "@rollup/pluginutils" "^4.2.1"
     resolve "^1.22.1"
 
-"@rollup/plugin-virtual@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-virtual/-/plugin-virtual-2.0.3.tgz#0afc88d75c1e1378ab290b8e9898d4edb5be0d74"
-  integrity sha512-pw6ziJcyjZtntQ//bkad9qXaBx665SgEL8C8KI5wO8G5iU5MPxvdWrQyVaAvjojGm9tJoS8M9Z/EEepbqieYmw==
+"@rollup/plugin-virtual@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-virtual/-/plugin-virtual-3.0.1.tgz#cea7e489481cc0ca91516c047f8c53c1cfb1adf6"
+  integrity sha512-fK8O0IL5+q+GrsMLuACVNk2x21g3yaw+sG2qn16SnUd3IlBsQyvWxLMGHmCmXRMecPjGRSZ/1LmZB4rjQm68og==
 
 "@rollup/pluginutils@^4.2.1":
   version "4.2.1"
