@@ -53,7 +53,7 @@
 		"eslint-config-prettier": "8.8.0",
 		"eslint-plugin-functional": "4.4.1",
 		"husky": "8.0.3",
-		"prettier": "2.8.8",
+		"prettier": "3.0.0",
 		"rimraf": "5.0.1",
 		"rollup": "3.26.1",
 		"rollup-plugin-dts": "5.3.0",
