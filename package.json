@@ -32,7 +32,7 @@
 	"license": "MPL-2.0",
 	"dependencies": {
 		"@azure/functions": "^3.0.0",
-		"@devprotocol/util-ts": "3.0.0",
+		"@devprotocol/util-ts": "3.0.1",
 		"@ethersproject/abi": "^5.1.0",
 		"jsonwebtoken": "^9.0.0",
 		"ramda": "^0.29.0"
