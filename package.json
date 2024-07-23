@@ -57,7 +57,7 @@
 		"rimraf": "5.0.9",
 		"rollup": "3.29.4",
 		"rollup-plugin-dts": "6.1.1",
-		"typescript": "5.5.3"
+		"typescript": "5.5.4"
 	},
 	"ava": {
 		"files": [
