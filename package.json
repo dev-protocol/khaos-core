@@ -55,7 +55,7 @@
 		"husky": "8.0.3",
 		"prettier": "3.5.3",
 		"rimraf": "5.0.10",
-		"rollup": "3.29.5",
+		"rollup": "4.44.1",
 		"rollup-plugin-dts": "6.2.1",
 		"typescript": "5.8.3"
 	},
